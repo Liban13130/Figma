@@ -227,8 +227,8 @@
 
 .sec2 button{
     display: block;
-    margin: 56px auto;
-    min-width: 290px;
+    margin: 50px auto;
+    min-width: 150px;
     padding: 15px;
     font-size: 20px;
     background-color: #000000;
@@ -237,9 +237,10 @@
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.4s;
     font-family: ITC Mixage, sans-serif;
 }
+
 
 .sec2 button:hover{
     transform: translateY(-5px);
@@ -277,6 +278,9 @@
     }
     .sec2 button{
         margin: 0 auto;
+    }
+    .sec2 .block-2 {
+        margin: 0;
     }
 }
 
@@ -336,6 +340,9 @@
     .sec3{
         flex-direction: column;
         text-align: center;
+    }
+    .sec3 .block-right {
+        margin-right: 0;
     }
     .sec3 .block-left {
         margin-right: 0;
@@ -455,6 +462,9 @@
     }
     .sec4 .block{
         margin-bottom: 50px;
+    }
+    .sec4 .block-2{
+        margin: 0;
     }
     .sec4 .block p{
         font-size: 20px;
@@ -584,4 +594,104 @@
 }
 .sec6 .block-image img:nth-child(7){
     width: 120px;
+}
+
+/* SECTION 7 */
+
+.sec7{
+    text-align: center;
+}
+.sec7 h1{
+    padding: 100px 10px 82px 10px;
+    font-size: 2.5em;
+}
+.sec7 p{
+    color: rgb(102 102 102);
+}
+.sec7 .btn-1{
+    width: 95%;
+    padding: 10px 50px;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 3px solid black;
+    transition: 0.2s;
+    display: inline-flex;
+    margin: 15px 0;
+}
+.sec7 .btn-1 img{
+    width: 19px;
+    margin-right: 10px;
+}
+.sec7 .btn-2{
+    margin: 17px 0;
+    width: 95%;
+    padding: 10px 60px;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 3px solid black;
+    color: white;
+    background-color: #000;
+    transition: 0.2s;
+}
+.sec7 .btn-1:hover,
+.sec7 .btn-2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+form{
+    max-width: 300px;
+    margin: 0 auto;
+}
+form p:nth-child(2){
+    margin: 20px auto;
+}
+
+form input{
+    width: 95%;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 3px solid black;
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    transition: 0.2s;
+    outline: none;
+    margin: 15px 0;
+}
+
+form input:focus{
+    border: 3px solid #5551ff;
+}
+.sec7 .consentement{
+    font-size: 12px;
+    width: 100%;
+    margin:20px auto;
+    line-height: 25px;
+    padding: 0 15px;
+}
+.sec7 a{
+    color: #5551ff;
+}
+
+.sec7 .authentication{
+    margin: 20px;
+    text-align: center;
+}
+
+.sec7 .last-child{
+    margin: 20px 0 100px 0;
+}
+
+@media (max-width:285px) {
+    .sec7 h1{
+        font-size: 2em;
+    }
 }
