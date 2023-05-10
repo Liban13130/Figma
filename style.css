@@ -49,8 +49,6 @@
 .navigation .nav button:hover{
     transform: translateY(-3px);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    text-decoration: underline;
-    text-underline-offset: 5px;
 }
 
 .navigation .nav li{
