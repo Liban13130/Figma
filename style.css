@@ -48,7 +48,9 @@
 }
 .navigation .nav button:hover{
     transform: translateY(-3px);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .navigation .nav li{
@@ -392,6 +394,7 @@
 .sec4 a{
     color: #000;
     text-decoration: underline;
+    text-underline-offset: 5px;
 }
 .sec4 img{
     width: 100%;
@@ -538,6 +541,7 @@
 .sec5 .block-left a{
     color: #000;
     text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 @media (max-width: 1105px){
@@ -612,7 +616,7 @@
     width: 95%;
     padding: 10px 50px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #fff;
     border-radius: 7px;
     cursor: pointer;
@@ -693,5 +697,111 @@ form input:focus{
 @media (max-width:285px) {
     .sec7 h1{
         font-size: 2em;
+    }
+}
+
+/* FOOTER */
+
+.sec8{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sec8 .block{
+    max-width: 210px;
+    margin: 0 70px;
+}
+
+.sec8 .block h3{
+    font-size: 17px;
+}
+
+
+.sec8 .block-1 li{
+    display: flex;
+    align-items: center;
+}
+
+.sec8 .block li{
+    font-size: 14px;
+    margin: 20px 0;
+    cursor: pointer;
+    line-height: 22px;
+    transition: 0.1s;
+}
+.sec8 .block-2 li:hover,
+.sec8 .block-3 li:hover,
+.sec8 .block-4 li:hover,
+.sec8 .block-5 li:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.sec8 .block i{
+    font-size: 15px;
+    margin-right: 7px;
+    transition: 0.1s;
+}
+.sec8 .block-1 .fa-twitter:hover,
+.sec8 .block-1 .twitter:hover{
+    color: #1DA1F2;
+}
+
+.sec8 .block-1 .fa-youtube:hover,
+.sec8 .block-1 .youtube:hover{
+    color: #FF0000;
+}
+
+.sec8 .block-1 .fa-instagram:hover,
+.sec8 .block-1 .instagram:hover{
+    background: -webkit-linear-gradient(120deg, #405DE6 0%, #5851DB	100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sec8 .block-1 .fa-square-facebook:hover,
+.sec8 .block-1 .facebook:hover{
+    color: #4267B2;
+}
+
+footer p{
+    text-align: center;
+    margin: 100px 0;
+}
+footer p span{
+    margin: 0 20px;
+}
+footer p i{
+    margin-right: 5px;
+}
+footer p a{
+    text-underline-offset: 7px;
+    color: #000;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+
+/* NE PAS OUBLIER METTRE EN DISPLAY COLONNE POUR LE RESPONSIVE ET RETIRER LES MARGES POUR CENTRER ET EN RAJOUTER POUR ESPACER */
+/* A PARTIR DE 1192 PX */
+
+@media (max-width: 1182px){
+    .sec8 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sec8 .block {
+        margin-bottom: 100px;
+    }
+    .sec8 .block li{
+        line-height: 15px;
+    }
+}
+@media (max-width: 337px){
+    .sec8 .block li{
+        font-size: 12px;
     }
 }
