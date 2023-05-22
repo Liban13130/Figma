@@ -28,8 +28,9 @@
     align-items: center;
     width: 47%;
 }
-.navigation .nav a{
+.navigation .nav a {
     color: #000000;
+    font-size: 100%;
 }
 
 .navigation .nav button{
@@ -56,6 +57,37 @@
 }
 .navigation .nav li:hover{
     transform: scale(1.1);
+}
+
+
+/* MENU */
+
+@media (max-width: 1532px){
+    .navigation .nav li{
+        font-size: 14px;
+    }
+    .navigation .nav button{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 1265px){
+    .logo{
+        display: none;
+    }
+    .navigation .nav {
+        margin: 20px auto;
+        text-align: center;
+    }
+    .navigation .nav li{
+        margin-right: 40px;
+        font-size: 20px;
+        
+    }
+    .navigation .nav button{
+        padding: 15px;
+        font-size: 20px;
+    }
 }
 
 /* SECTION 1 */
@@ -781,8 +813,6 @@ footer p a:hover{
     text-decoration: underline;
 }
 
-/* NE PAS OUBLIER METTRE EN DISPLAY COLONNE POUR LE RESPONSIVE ET RETIRER LES MARGES POUR CENTRER ET EN RAJOUTER POUR ESPACER */
-/* A PARTIR DE 1192 PX */
 
 @media (max-width: 1182px){
     .sec8 {
