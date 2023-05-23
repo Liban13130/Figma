@@ -12,10 +12,10 @@
 /* Barre de navigation */
 
 .navigation{
-    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navigation img{
     height: 62px;
@@ -58,79 +58,89 @@
 .navigation .nav li:hover{
     transform: scale(1.1);
 }
-.burger{
-    height: 42px;
-    width: 33px;
-    position: relative;
-    cursor: pointer;
-}
-.burger span{
-    height: 4px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color 0.3s;
-}
 
-.burger span::before, 
-.burger span::after{
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    transition: 0.7s;
-}
 
-.burger span::before {
-    transform: translateY(-10px);
-}
-
-.burger span::after {
-    transform: translateY(10px);
-}
-
-.burger.active span{
-    background-color: transparent;
-}
-.burger.active span::after{
-    transform: translateY(0) rotateZ(45deg);
-}
-.burger.active span::before{
-    transform: translateY(0) rotateZ(-45deg);
+.toggle{
+    display: none;
 }
 
 
-@media (max-width: 1532px){
-    .navigation .nav li{
-        font-size: 14px;
+
+@media (max-width:1450px) {
+    .navigation .nav{
+        display: flex;
+        width: 63%;
     }
-    .navigation .nav button{
-        padding: 10px;
-        font-size: 14px;
-    }
-}
-@media (max-width: 1265px){
-    .navigation .nav li{
-        font-size: 12px;
-    }
-    .navigation .nav button{
-        padding: 10px;
-        font-size: 12px;
+    .toggle{
+        display: none;
     }
 }
-@media (max-width: 1125px){
-    .navigation .nav li{
-        font-size: 12px;
+
+@media (max-width:1000px) {
+    .toggle{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        font-size: 2rem;
+        display: block;
+        color: rgb(0, 0, 0);
+        top: 20px;
+        right: 20px;
     }
-    .navigation .nav button{
-        padding: 10px;
-        font-size: 12px;
+    .navigation .nav{
+        display: none;
+    }
+    .open .logo{
+        display: none;
+    }
+    .open .navigation .nav{
+        position: relative;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #000000;
+        opacity: 0.8;
+        transition: 0.6s;
+        display: flex;
+    }
+    .open .navigation .nav li{
+        color: white;
+    }
+    .open .toggle{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        font-size: 2rem;
+        display: block;
+        color: rgb(250, 250, 250);
+        top: 20px;
+        left: 20px;
+        transition: 0.6s;
+    }
+    .open .navigation .nav button{
+        background-color: #ffffff;
+        color: #000000;
+        font-weight: 900;
+
+    }
+    .open .ouvrir{
+        display: none;
+        transition: 0.6s;
+    }
+    .open .fermer{
+        display: block;
+    }
+    .fermer{
+        display: none;
     }
 }
+
+
+
+
 
 /* SECTION 1 */
 

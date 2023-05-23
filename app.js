@@ -1,7 +1,8 @@
-const burger = document.querySelector('.burger')
+const toggle = document.querySelector('.toggle')
+const body = document.querySelector('body')
 
-burger.addEventListener('click', handleClick)
+toggle.addEventListener('click', handleClick)
 
 function handleClick(){
-    burger.classList.toggle('active')
+    body.classList.toggle('open')
 }
